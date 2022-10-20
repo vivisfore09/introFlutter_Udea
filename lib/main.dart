@@ -66,7 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
       child: Center(
-        child: Column(
+        child: SingleChildScrollView(
+          child: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('TRIANGULO',
@@ -141,9 +142,10 @@ class _MyHomePageState extends State<MyHomePage> {
                border: Border.all(color: Colors.black12, width: 4),
                borderRadius: BorderRadius.circular(20)
              ),
-             
-           )  
+
+           )
           ],
+        ),
         ),
       ),
       ),
